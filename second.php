@@ -1,7 +1,8 @@
 	<html>
 	<body>
-	<p>This is a list of famous people sharing your birthday!</p>
+	<h4>This is a list of famous people sharing your birthday!</h4>
     <?php 
+
         $date = $_POST['date'];
         list($month, $day, $year) =explode("/",$date);
         
@@ -44,10 +45,11 @@
 	                    break;
 	                     
 	                default :
-	                    echo "Hello Valued Customer";
+	                    echo "Sorry";
 	                    break;         
 	            }
-        echo "<a align=\"center\" href=\"http://www.biography.com/people/groups/born-on-" . $monthName . "-" . $day . "\"> Click this</a>"
-        ?>
+     echo "<a href=\"http://www.biography.com/people/groups/born-on-" . $monthName . "-" .$day . "\"> Click this</a>" ;
+       
+ ?>
 	</body>
 	</html>
